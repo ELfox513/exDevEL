@@ -1,0 +1,16 @@
+*
+
+!scripts/
+scripts/*
+!scripts/513_exDevEL.lua
+!scripts/exDevEL/
+!scripts/exDevEL/*
+!scripts/utils/
+scripts/utils/*
+!scripts/utils/game_commands.lua
+!scripts/utils/global_commands.lua
+
+!.gitignore
+!mod_id.txt
+!README.md
+!steam_appid.txt

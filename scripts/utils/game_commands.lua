@@ -302,11 +302,11 @@ _G.cmd = {
 }
 
 -- Show help message when DeveloperConsole is opened for the first time
---local devConsoleWasOpened = false
---addEventHandler("DeveloperConsoleShow", function()
---    if not devConsoleWasOpened then
---        devConsoleWasOpened = true
---
---        _G.cmd.help()
---    end
---end)
+local devConsoleWasOpened = false
+addEventHandler("DeveloperConsoleShow", function()
+    if not devConsoleWasOpened then
+        devConsoleWasOpened = true
+
+        _G.cmd.help()
+    end
+end)
