@@ -1,5 +1,8 @@
 *
 
+!resourcepacks/
+resourcepacks/*
+
 !scripts/
 scripts/*
 !scripts/513_exDevEL.lua
