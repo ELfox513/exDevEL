@@ -2,6 +2,12 @@
 
 !resourcepacks/
 resourcepacks/*
+!resourcepacks/default/
+resourcepacks/default/*
+!resourcepacks/default/pack.json
+!resourcepacks/default/textures/
+resourcepacks/default/textures/*
+!resourcepacks/default/textures/exDevEL.*
 
 !scripts/
 scripts/*

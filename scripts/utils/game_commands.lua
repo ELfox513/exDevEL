@@ -14,10 +14,10 @@ _G.cmd = {
 
         for k, v in pairs(_G.cmd) do
             local info = v("?")
-            local cmdArgs = info.args
-            local cmdDescr = info.descr
-            if cmdArgs == nil then cmdArgs = "" end
-            if cmdDescr == nil then cmdDescr = "description not provided" end
+---@diagnostic disable-next-line: need-check-nil
+            local cmdArgs = info.args or ""
+---@diagnostic disable-next-line: need-check-nil
+            local cmdDescr = info.descr or "description not provided"
             log("    cmd." .. k .. "(" .. cmdArgs .. ") - " .. cmdDescr)
         end
     end,
@@ -48,7 +48,7 @@ _G.cmd = {
             }
         end
 
-        if SP ~= nul then
+        if SP ~= nil then
             newZoom = tonumber(newZoom)
             local cameraController = SP._input:getCameraController()
             cameraController:setZoom(newZoom);

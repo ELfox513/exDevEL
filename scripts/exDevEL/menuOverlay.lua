@@ -1,7 +1,7 @@
 --[[
-    - exDevEL menu
+    - exDevEL Menu Overlay
 ]]
-exdevel.menu = {}
+--exdevel.menuOverlay = {}
 
 -- Creating the menu toggle button ----------------------------
 
@@ -9,4 +9,4 @@ exdevel.menu = {}
 
 -- Saving Variables -------------------------------------------
 
-elog("Menu loaded")
+elog("Menu Overlay loaded")
