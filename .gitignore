@@ -1,5 +1,8 @@
 *
 
+!.vscode/
+!.vscode/*
+
 !resourcepacks/
 resourcepacks/*
 !resourcepacks/default/
