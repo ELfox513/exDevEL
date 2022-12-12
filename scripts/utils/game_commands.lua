@@ -14,9 +14,7 @@ _G.cmd = {
 
         for k, v in pairs(_G.cmd) do
             local info = v("?")
----@diagnostic disable-next-line: need-check-nil
             local cmdArgs = info.args or ""
----@diagnostic disable-next-line: need-check-nil
             local cmdDescr = info.descr or "description not provided"
             log("    cmd." .. k .. "(" .. cmdArgs .. ") - " .. cmdDescr)
         end
