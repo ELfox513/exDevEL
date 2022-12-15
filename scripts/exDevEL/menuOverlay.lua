@@ -2,8 +2,6 @@
     - exDevEL Menu Overlay
 ]]
 
-----[[ HEADER ]]------------------------------------------------
-
 -- import from exdevel utils -----------------------------------
 
 local log = exdevel.utils.log
@@ -12,18 +10,34 @@ local log = exdevel.utils.log
 
 local UiManager = managers.UiManager
 
-
 -- Preparation -------------------------------------------------
 
-local menuOverlayLayer = UiManager:addLayer(UiManager.MainUiLayer.OVERLAY, 9512, "exDevEL menu overlay")
+local moLayer = UiManager:addLayer(UiManager.MainUiLayer.OVERLAY, 9512, "exDevEL menu overlay")
+local moTable = moLayer:getTable()
 local columns = {}
-
-----[[ MAIN ]]--------------------------------------------------
-
+ 
 -- Methods -----------------------------------------------------
 
 exdevel.menuOverlay = {
+
+    addCategory = function(id, name, color, buttons, optimize, modmode)
+        --todo
+    end,
+
+    addButton = function(id, name, categoryId, runnable)
+        --todo
+    end,
+
+    rebuild = function()
+        --todo
+    end,
+
     show = function()
         UiManager.dialog:showAlert("Nothing to show, sorry")
     end,
+
+    hide = function()
+        --todo
+    end,
+
 }

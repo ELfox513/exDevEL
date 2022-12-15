@@ -24,6 +24,7 @@ local Gdx = bind("Gdx", GDXNS)
 local Logger = bind("Logger")
 
 exdevel.utils = {
+
     log = function(text)
         Logger:log("exDevEL", text)
     end,
@@ -39,4 +40,5 @@ exdevel.utils = {
     printr = function(var, tabSize, visitedTables)
         log(_G.utils.printr(var, tabSize, visitedTables))
     end,
+    
 }
